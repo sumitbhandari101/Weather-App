@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Weather app</title>
+    <link rel="stylesheet" href="main.css">
+</head>
+<body>
+    <div class="main-app">
+        <div class="searchinputBox">
+            <input type="text" id="input-box" class="input-box" placeholder="Enter city name...." autocomplete="off">
+        </div>
+        
+        <div class="weather-body">
+            <div class="location-details">
+                <div class="city" id="city">Bhopal</div>
+                <div class="date" id="date">17 March 2021</div>
+            </div>
+
+            <div class="weather-status">
+                <div class="temp" id="temp">30&deg;C</div>
+                <div class="min-max" id="min-max">29&deg;C (min)/ 14&deg;C (max)</div>
+                <div class="weather" id="weather">Sunny</div>
+                <div class="img" id="img"></div>
+            </div>
+        </div>
+    </div>
+    <script src="Weather.js"></script>
+</body>
+</html>

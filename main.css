@@ -1,0 +1,88 @@
+*,*::before,*::after{
+    margin:0;
+    padding:0;
+    box-sizing:border-box;
+}
+
+body{
+    background-image: url("sunny_weather.jpg");
+    background-size: cover;
+    /*background-repeat:no-repeat;
+    background-position:top center;*/
+    height:100vh;
+    display:flex;
+    justify-content:center;
+    align-items:center;
+    background-color:black;
+    font-family:Verdana, Geneva, Tahoma, sans-serif;
+}
+.main-app{
+    width:40vh;
+    display:flex;
+    flex-direction:column;
+    justify-content:center;
+    align-items:center;
+    background-color:rgba(219, 218, 216, 0.959);
+    padding:20px;
+}
+
+.main-app > *{
+    margin-bottom:20px;
+    
+}
+.searchinputBox{
+    width:100%;
+    
+
+}
+
+.input-box{
+    width:100%;
+    height:40px;
+    background-color:rgb(247, 245, 242,.6);
+    outline:none;
+    border:none;
+    font-size:1.2rem;
+    text-align:center;
+    border-radius:10px;
+}
+
+.weather-body{
+    display:none;
+    width:100%;
+    height:auto;
+    font-size:1.2rem;
+    background-color:rgb(247, 245, 242,.6);
+    padding:20px;
+    text-align:center;
+    line-height:2rem;
+    font-size:1.3rem;
+    border-radius:10px;
+}
+
+.location-details{
+    font-weight:bold;
+}
+
+.weather-status{
+    padding:20px;
+}
+
+.temp{
+    font-size:3rem;
+    font-weight:700;
+    margin:20px 0;
+    text-shadow:2px 4px rgba(0,0,0,0.3);
+}
+
+.min-max, .weather{
+    font-size:1rem;
+    font-weight:600;
+}
+
+@media(max-width:550px){
+    
+.main-app{
+    width:30vh;
+}
+}
